@@ -49,10 +49,10 @@ export class Queue<T> {
     if (this.isEmpty) {
       return '';
     }
-    let orderedValue = [];
+    let values = [];
     for (let i = this._head; i < this._tail; i++) {
-      orderedValue.push(this._queue[i]);
+      values.unshift(this._queue[i].toString());
     }
-    return orderedValue.join(' -> ');
+    return values.join(' -> ');
   }
 }

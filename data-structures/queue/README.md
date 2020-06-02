@@ -1,6 +1,10 @@
 # Queue
 
-In computer science, a **queue** is a particular kind of abstract data type or collection in which the entities in the collection are kept in order and the principle (or only) operations on the collection are the addition of entities to the rear terminal position, known as enqueue, and removal of entities from the front terminal position, known as dequeue. This makes the queue a First-In-First-Out (FIFO) data structure. In a FIFO data structure, the first element added to the queue will be the first one to be removed. This is equivalent to the requirement that once a new element is added, all elements that were added before have to be removed before the new element can be removed. Often a peek or front operation is also entered, returning the value of the front element without dequeuing it. A queue is an example of a linear data structure, or more abstractly a sequential collection.
+In computer science, a **queue** is a collection of entities that are maintained in a sequence and can be modified by the addition of entities at one end of the sequence and the removal of entities from the other end of the sequence. By convention, the end of the sequence at which elements are added is called the back, **tail**, or rear of the queue, and the end at which elements are removed is called the **head** or front of the queue, analogously to the words used when people line up to wait for goods or services.
+
+The operation of adding an element to the rear of the queue is known as enqueue, and the operation of removing an element from the front is known as dequeue. Other operations may also be allowed, often including a peek or front operation that returns the value of the next element to be dequeued without dequeuing it.
+
+The operations of a queue make it a first-in-first-out (FIFO) data structure. In a FIFO data structure, the first element added to the queue will be the first one to be removed. This is equivalent to the requirement that once a new element is added, all elements that were added before have to be removed before the new element can be removed. A queue is an example of a linear data structure, or more abstractly a sequential collection
 
 Representation of a FIFO (first in, first out) queue
 
@@ -8,14 +12,26 @@ Representation of a FIFO (first in, first out) queue
 
 ## Implementation
 
-Implement using built-in array, with tail pointer:
+Implement using built-in object as a map, with tail pointer:
 
-- enqueue(value) - adds value at position at tail
-- dequeue() - returns value and removes least recently added element (front)
-- empty()
-- size()
+|Operation     |Description                                                              |Big O|
+|--------------|-------------------------------------------------------------------------|-----|
+|enqueue(value)|adds value  at tail                                                      |O(1) |
+|dequeue()     |returns value and removes least recently added element (head)            |O(1) |
+|peek()        |returns the value of the next element to be dequeued without dequeuing it|O(1) |
+|clear()       |removes all the element in the queue                                     |O(1) |
+|isEmpty       |checks if the queue is empty                                             |O(1) |
+|size          |checks the size of the queue                                             |O(1) |
+
+
+## Alternative Implementation
+
+1. [Trivial implementation using Array][0] - Using `arr.shift()` for dequeuing, took `O(n)`. That will not meet the requirement of `O(1)` for dequeuing.
+2. [Queue][1]
 
 ## References
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
-- [YouTube](https://www.youtube.com/watch?v=wjI1WNcIntg&list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8&index=3&)
+
+[0]: https://github.com/davidshariff/computer-science/blob/master/Data%20Structures/Queue.js
+[1]: https://github.com/yangshun/lago/blob/master/lib/data-structures/Queue.js
