@@ -1,5 +1,6 @@
+import { ObjectType } from '..//util/objectType';
 export class Queue<T> {
-  private _queue: { [key: number]: T };
+  private _queue: ObjectType<T>;
   private _head: number;
   private _tail: number;
 

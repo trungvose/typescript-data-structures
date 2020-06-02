@@ -12,21 +12,21 @@ Representation of a FIFO (first in, first out) queue
 
 ## Implementation
 
-Implement using built-in object as a map, with tail pointer:
+Implement using built-in object as a map, with tail pointer. I came up with this approach to make sure the Big O notation for the dequeue operation.
 
-|Operation     |Description                                                              |Big O|
-|--------------|-------------------------------------------------------------------------|-----|
-|enqueue(value)|adds value  at tail                                                      |O(1) |
-|dequeue()     |returns value and removes least recently added element (head)            |O(1) |
-|peek()        |returns the value of the next element to be dequeued without dequeuing it|O(1) |
-|clear()       |removes all the element in the queue                                     |O(1) |
-|isEmpty       |checks if the queue is empty                                             |O(1) |
-|size          |checks the size of the queue                                             |O(1) |
+| Operation      | Description                                                               | Big O |
+| -------------- | ------------------------------------------------------------------------- | ----- |
+| enqueue(value) | adds value at tail                                                        | O(1)  |
+| dequeue()      | returns value and removes least recently added element (head)             | O(1)  |
+| peek()         | returns the value of the next element to be dequeued without dequeuing it | O(1)  |
+| clear()        | removes all the element in the queue                                      | O(1)  |
+| isEmpty        | checks if the queue is empty                                              | O(1)  |
+| size           | checks the size of the queue                                              | O(1)  |
 
 
 ## Alternative Implementation
 
-1. [Trivial implementation using Array][0] - Using `arr.shift()` for dequeuing, took `O(n)`. That will not meet the requirement of `O(1)` for dequeuing.
+1. [Trivial implementation using Array][0] - Using `arr.shift()` for dequeuing, take `O(n)` time. That will not meet the requirement of `O(1)` for dequeuing.
 2. [Queue][1]
 
 ## References
