@@ -1,0 +1,29 @@
+{
+  "name": "typescript-data-structures",
+  "version": "1.0.0",
+  "description": "Fundamental data structures and algorithms a front end engineer should know, written all in TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trungk18/javascript-data-structures.git"
+  },
+  "author": "trungk18",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/trungk18/javascript-data-structures/issues"
+  },
+  "homepage": "https://github.com/trungk18/javascript-data-structures#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-typescript": "^7.10.1",
+    "babel-jest": "^26.0.1",
+    "jest": "^26.0.1"
+  },
+  "dependencies": {
+    "@types/jest": "^25.2.3"
+  }
+}
