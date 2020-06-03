@@ -12,7 +12,7 @@ Representation of a FIFO (first in, first out) queue
 
 ## Implementation
 
-Implement using built-in object as a map, with tail pointer. I came up with this approach to make sure the Big O notation for the dequeue operation.
+Implement using built-in object as a map, with tail pointer. I came up with this approach to make sure the Big O notation for the dequeue operation. You can implement with the same approach using array instead of object. But to take one element out of an array could take `O(n)`.
 
 | Operation      | Description                                                               | Big O |
 | -------------- | ------------------------------------------------------------------------- | ----- |

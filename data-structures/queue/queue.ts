@@ -1,4 +1,4 @@
-import { ObjectType } from '..//util/objectType';
+import { ObjectType } from '../model/objectType';
 export class Queue<T> {
   private _queue: ObjectType<T>;
   private _head: number;
@@ -23,7 +23,7 @@ export class Queue<T> {
     this._tail++;
   }
 
-  dequeue(): T {
+  dequeue(): T | undefined {
     if (this.isEmpty) {
       return undefined;
     }
@@ -33,7 +33,7 @@ export class Queue<T> {
     return value;
   }
 
-  peek(): T {
+  peek(): T | undefined {
     if (this.isEmpty) {
       return undefined;
     }
@@ -52,7 +52,7 @@ export class Queue<T> {
     }
     let values = [];
     for (let i = this._head; i < this._tail; i++) {
-      values.unshift(this._queue[i].toString());
+      values.unshift((this._queue[i] as any).toString());
     }
     return values.join(' -> ');
   }

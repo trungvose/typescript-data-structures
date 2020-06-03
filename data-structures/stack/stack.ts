@@ -1,4 +1,4 @@
-import { ObjectType } from '..//util/objectType';
+import { ObjectType } from '../model/objectType';
 
 export class Stack<T> {
   private _stack: ObjectType<T>;
@@ -50,7 +50,7 @@ export class Stack<T> {
     }
     let values = [];
     for (let i = 0; i < this._count; i++) {
-      values.unshift(this._stack[i].toString());
+      values.unshift((this._stack[i] as any).toString());
     }
     return values.join(' -> ');
   }
