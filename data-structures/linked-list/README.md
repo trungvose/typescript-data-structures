@@ -6,6 +6,8 @@ In computer science, a **linked list** is a linear collection of data elements, 
 
 ## Implementation
 
+### Singly Linked List
+
 I did implement without tail pointer.
 
 | Operation        | Description                             | Big O |
@@ -16,10 +18,6 @@ I did implement without tail pointer.
 | popBack()        | remove front item and return its value  | O(n)  |
 | isEmpty          | returns true if empty                   | O(1)  |
 | size             | returns number of data elements in list | O(1)  |
-
-### Singly Linked List
-
-Implementation without tail
 
 ## References
 
