@@ -25,7 +25,6 @@ Implement using built-in object as a map, with tail pointer. I came up with this
 | isEmpty     | checks if the stack is empty                                        | O(1)  |
 | size        | checks the size of the stack                                        | O(1)  |
 
-
 ## Alternative Implementation
 
 1. [Trivial implementation using Array][0] - Using `arr.splice()` for pop, could take `O(n)`. That will not meet the requirement of `O(1)` for pop operation.
