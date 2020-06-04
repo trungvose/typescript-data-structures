@@ -6,6 +6,7 @@ Fundamental data structures and algorithms a front end engineer should know, wri
 
 1. [Queue][queue]
 2. [Stack][stack]
+3. [Linked List (WIP)][linkedlist]
 
 ## Test
 
@@ -24,6 +25,7 @@ I know this collection of standards is not perfect and still needs to improve. I
 If you'd like to contribute, please fork the repository and make changes as you'd like. Pull requests are warmly welcome.
 
 [queue]: https://github.com/trungk18/typescript-data-structures/tree/master/data-structures/queue
-[queue]: https://github.com/trungk18/typescript-data-structures/tree/master/data-structures/stack
+[stack]: https://github.com/trungk18/typescript-data-structures/tree/master/data-structures/stack
+[linkedlist]: https://github.com/trungk18/typescript-data-structures/tree/master/data-structures/linked-list
 [issues]: https://github.com/trungk18/typescript-data-structures/issues/new
 [pullreq]: https://github.com/trungk18/typescript-data-structures/compare
