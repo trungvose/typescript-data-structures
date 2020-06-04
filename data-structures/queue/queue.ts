@@ -23,7 +23,7 @@ export class Queue<T> {
     this._tail++;
   }
 
-  dequeue(): T | undefined {
+  dequeue(): T {
     if (this.isEmpty) {
       return undefined;
     }
@@ -33,7 +33,7 @@ export class Queue<T> {
     return value;
   }
 
-  peek(): T | undefined {
+  peek(): T {
     if (this.isEmpty) {
       return undefined;
     }
@@ -52,7 +52,7 @@ export class Queue<T> {
     }
     let values = [];
     for (let i = this._head; i < this._tail; i++) {
-      values.unshift((this._queue[i] as any).toString());
+      values.unshift(this._queue[i].toString());
     }
     return values.join(' -> ');
   }

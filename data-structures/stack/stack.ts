@@ -9,11 +9,11 @@ export class Stack<T> {
     this._count = 0;
   }
 
-  get isEmpty() {
+  get isEmpty(): boolean {
     return this.size === 0;
   }
 
-  get size() {
+  get size(): number {
     return this._count;
   }
 
@@ -22,7 +22,7 @@ export class Stack<T> {
     this._count++;
   }
 
-  pop() {
+  pop(): T {
     if (this.isEmpty) {
       return undefined;
     }
@@ -32,19 +32,19 @@ export class Stack<T> {
     return value;
   }
 
-  peek() {
+  peek(): T {
     if (this.isEmpty) {
       return undefined;
     }
     return this._stack[this._count - 1];
   }
 
-  clear() {
+  clear(): void {
     this._stack = {};
     this._count = 0;
   }
 
-  print() {
+  print(): string {
     if (this.isEmpty) {
       return '';
     }

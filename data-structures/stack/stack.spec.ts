@@ -6,7 +6,7 @@ describe('Stack', () => {
     stack = new Stack();
   });
 
-  it('1. Empty stack test case', () => {
+  it('1. Empty stack', () => {
     expect(stack.size).toBe(0);
     expect(stack.isEmpty).toBe(true);
   });

@@ -6,7 +6,7 @@ describe('Queue', () => {
     queue = new Queue();
   });
 
-  it('1. Empty queue test case', () => {
+  it('1. Empty queue', () => {
     expect(queue.size).toBe(0);
     expect(queue.isEmpty).toBe(true);
   });
