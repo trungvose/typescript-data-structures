@@ -8,16 +8,21 @@ In computer science, a **linked list** is a linear collection of data elements, 
 
 ### Singly Linked List
 
-I did implement without tail pointer.
+I implemented without the tail pointer.
 
-| Operation        | Description                             | Big O |
-| ---------------- | --------------------------------------- | ----- |
-| pushFront(value) | adds an item to the front of the list   | O(1)  |
-| popFront         | remove front item and return its value  | O(1)  |
-| pushBack(value)  | adds an item to the end of the list     | O(n)  |
-| popBack()        | remove front item and return its value  | O(n)  |
-| isEmpty          | returns true if empty                   | O(1)  |
-| size             | returns number of data elements in list | O(1)  |
+| Operation        | Description                                        | Big O |
+| ---------------- | -------------------------------------------------- | ----- |
+| pushFront(value) | Adds an item to the front of the list              | O(1)  |
+| popFront()       | Remove front item and return its value             | O(1)  |
+| front()          | Get value of the front item                        | O(1)  |
+| pushBack(value)  | Adds an item to the end of the list                | O(n)  |
+| popBack()        | Remove front item and return its value             | O(n)  |
+| back()           | Get value of the end item                          | O(n)  |
+| reverse()        | Reverses the list                                  | O(n)  |
+| has(value)       | Return boolean if the list has a value             | O(n)  |
+| remove(value)    | Removes the first item in the list with this value | O(n)  |
+| isEmpty          | Returns true if empty                              | O(1)  |
+| size             | Returns number of data elements in list            | O(1)  |
 
 ## References
 

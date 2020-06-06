@@ -6,7 +6,7 @@ Fundamental data structures and algorithms a front end engineer should know, wri
 
 1. [Queue][queue]
 2. [Stack][stack]
-3. [Linked List (WIP)][linkedlist]
+3. [Linked List][linkedlist]
 
 ## Test
 
@@ -17,6 +17,14 @@ npm install
 # run all test suite
 npm run test
 ```
+
+Please make sure all the tests has been passed before issuing a pull request :)
+
+## References
+
+- [coding-interview-university][1]
+
+[3]: https://github.com/jwasham/coding-interview-university
 
 ## Contributing
 
