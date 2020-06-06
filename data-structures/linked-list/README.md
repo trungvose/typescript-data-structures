@@ -24,6 +24,10 @@ I implemented without the tail pointer.
 | isEmpty          | Returns true if empty                              | O(1)  |
 | size             | Returns number of data elements in list            | O(1)  |
 
+This is my notebook when implementing the reverse operation.
+
+![Singly Linked List Reverse][4]
+
 ## References
 
 - [Coursera][1]
@@ -33,3 +37,4 @@ I implemented without the tail pointer.
 [1]: https://www.coursera.org/lecture/data-structures/singly-linked-lists-kHhgK
 [2]: https://en.wikipedia.org/wiki/Linked_list
 [3]: https://github.com/jwasham/coding-interview-university#linked-lists
+[4]: https://raw.githubusercontent.com/trungk18/typescript-data-structures/master/assets/singly-linked-list-reverse.jpg
