@@ -33,9 +33,9 @@ export class LinkedList<T> {
    */
   pushFront(value: T): LinkedList<T> {
     this._count++;
-    let newNode = new Node(value);
-    newNode.next = this._head;
-    this._head = newNode;
+    let node = new Node(value);
+    node.next = this._head;
+    this._head = node;
     return this;
   }
 
