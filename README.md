@@ -4,10 +4,25 @@ Fundamental data structures and algorithms a front end engineer should know, wri
 
 ## Available data structures
 
-1. [Queue][queue]
-2. [Stack][stack]
-3. [Singly Linked List][linkedlist]
-4. [Double Linked List (WIP)][linkedlist]
+1. [x] [Queue][queue]
+2. [x] [Stack][stack]
+3. [x] [Singly Linked List][linkedlist]
+4. [ ] [Double Linked List (wip)][linkedlist]
+5. [ ] Trees
+6. [ ] Tries
+7. [ ] HashSets
+8. [ ] HashTables
+9. [ ] Graph
+
+## Algorithms
+
+1. [ ] Quick Sort
+2. [ ] Merge Sort
+3. [ ] Insertion Sort
+4. [ ] Binary Search
+5. [ ] Depth First Search
+6. [ ] Breadth First Search
+
 
 ## Test
 
