@@ -14,7 +14,7 @@ Simple representation of a stack runtime with push and pop operations.
 
 ## Implementation
 
-Implement using built-in object as a map, with tail pointer. I came up with this approach to make sure the Big O notation for the dequeue operation.
+Implement using built-in object as a map, with tail pointer. I came up with this approach to make sure the Big O notation for the `pop` operation.
 
 | Operation   | Description                                                         | Big O |
 | ----------- | ------------------------------------------------------------------- | ----- |
